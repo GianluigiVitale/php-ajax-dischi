@@ -1,0 +1,83 @@
+/* INZIO RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* FINE RESET */
+
+/* INZIO COMMON */
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FINE COMMON */
+
+/* INZIO HEADER */
+
+header {
+  background-color: black;
+  height: 40px;
+}
+
+.logo img {
+  height: 30px;
+  margin-top: 5px;
+}
+
+/* FINE HEADER */
+
+/* INZIO MAIN */
+
+main {
+  background-color: #191919;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: black;
+  display: inline-block;
+  padding: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 3px;
+}
+
+.card h4 {
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.card p {
+  font-size: 14px;
+  color: #646464;
+}
+
+.card span {
+  font-size: 12px;
+  color: #DADADA;
+}
+
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* FINE MAIN */
+
