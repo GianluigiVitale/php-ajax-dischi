@@ -4,6 +4,11 @@ main {
     min-height: calc(100vh - 40px);
 }
 
+.songs {
+    @include flex-justify(center);
+    flex-wrap: wrap;
+}
+
 .card {
     background-color: $primary_color;
     @include flex-column-justify(space-between);
@@ -13,8 +18,11 @@ main {
     margin-bottom: 20px;
     border-radius: 5px;
     text-align: center;
+}
 
+.img-name {
     img {
+        width: 150px;
         border-radius: 3px;
     }
 
@@ -22,7 +30,9 @@ main {
         padding: 10px 0 10px 0;
         @include font-color(16px, white);
     }
+}
 
+.info-songs {
     p {
         @include font-color(14px, $third_color);
     }
@@ -30,9 +40,4 @@ main {
     span {
         @include font-color(12px, $fourth_color);
     }
-}
-
-.songs {
-    @include flex-justify(center);
-    flex-wrap: wrap;
 }

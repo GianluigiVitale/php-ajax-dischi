@@ -44,6 +44,12 @@ main {
   min-height: calc(100vh - 40px);
 }
 
+.songs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .card {
   background-color: black;
   display: flex;
@@ -57,30 +63,25 @@ main {
   text-align: center;
 }
 
-.card img {
+.img-name img {
+  width: 150px;
   border-radius: 3px;
 }
 
-.card h4 {
+.img-name h4 {
   padding: 10px 0 10px 0;
   font-size: 16px;
   color: white;
 }
 
-.card p {
+.info-songs p {
   font-size: 14px;
   color: #646464;
 }
 
-.card span {
+.info-songs span {
   font-size: 12px;
   color: #DADADA;
-}
-
-.songs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 /* FINE MAIN */
