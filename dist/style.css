@@ -46,7 +46,9 @@ main {
 
 .card {
   background-color: black;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 180px;
   padding: 15px;
   margin-right: 20px;
@@ -77,6 +79,7 @@ main {
 
 .songs {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

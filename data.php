@@ -33,8 +33,8 @@ $data_canzoni = [
     [
         'immagineSrc' => 'https://picsum.photos/150/150?random=6',
         'titolo' => 'One more acr, one more rider',
-        'autore' => 'Iron Maiden',
-        'anno' => 2000
+        'autore' => 'Eric Clapton',
+        'anno' => 2002
     ],
 ];
 ?>

@@ -108,7 +108,7 @@ var inizioCard = $("#card-song-template").html();
 var templateCard = Handlebars.compile(inizioCard); // handlebars
 
 $.ajax({
-  // chiamata ajax per prendere le singole canzoni e grazie a handlebars popolo l'html
+  // ajax call to GET songs informations, used handlebars to populate html
   url: 'data-json.php',
   method: 'GET',
   success: function success(songs) {

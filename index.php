@@ -24,10 +24,14 @@
                 <?php // include 'data.php'; ?>     <!-- To see php method just remove the // -->
                 <?php foreach ($data_canzoni as $key => $song) { ?>
                     <div class="card">
-                        <img src="<?php echo $song['immagineSrc']; ?>">
-                        <h4><?php echo $song['titolo']; ?></h4>
-                        <p><?php echo $song['autore']; ?></p>
-                        <span><?php echo $song['anno']; ?></span>
+                        <div class="img-name">
+                            <img src="<?php echo $song['immagineSrc']; ?>">
+                            <h4><?php echo $song['titolo']; ?></h4>
+                        </div>
+                        <div class="info-songs">
+                            <p><?php echo $song['autore']; ?></p>
+                            <span><?php echo $song['anno']; ?></span>
+                        </div>
                     </div>
                 <?php } ?>
             </div>
@@ -35,12 +39,18 @@
 
 
 
+
+
         <script id="card-song-template" type="text/x-handlebars-template">  <!-- Template handlebars to create song card -->
             <div class="card">
-                <img src="{{sourceImg}}">
-                <h4>{{songName}}</h4>
-                <p>{{author}}</p>
-                <span>{{year}}</span>
+                <div class="img-name">
+                    <img src="{{sourceImg}}">
+                    <h4>{{songName}}</h4>
+                </div>
+                <div class="info-songs">
+                    <p>{{author}}</p>
+                    <span>{{year}}</span>
+                </div>
             </div>
         </script>
 
