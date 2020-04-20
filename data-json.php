@@ -37,4 +37,8 @@ $data_canzoni = [
         'anno' => 2000
     ],
 ];
+
+header('Content-Type: application/json');
+echo json_encode($data_canzoni);
+
 ?>
