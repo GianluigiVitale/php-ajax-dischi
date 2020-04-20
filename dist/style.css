@@ -40,8 +40,13 @@ header {
 
 main {
   background-color: #191919;
-  padding-top: 100px;
   min-height: calc(100vh - 40px);
+}
+
+.genre {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 .songs {

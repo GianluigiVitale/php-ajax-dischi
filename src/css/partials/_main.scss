@@ -1,7 +1,11 @@
 main {
     background-color: $secondary_color;
-    padding-top: 100px;
     min-height: calc(100vh - 40px);
+}
+
+.genre {
+    @include flex-justify(center);
+    padding: 50px 0;
 }
 
 .songs {

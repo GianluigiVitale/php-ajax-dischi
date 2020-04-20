@@ -19,11 +19,16 @@
             </div>
         </header>
         <main>
+            <div class="container genre">
+                <select class="genre-selector">     <!-- handlebars options -->
+                    <option value="">Filtra per Genere:</option>
+                </select>
+            </div>
             <div class="container songs">
 
                 <?php // include 'data.php'; ?>     <!-- To see php method just remove the // -->
                 <?php foreach ($data_canzoni as $key => $song) { ?>
-                    <div class="card">
+                    <div class="card" data-genre="<?php echo $song['genere']; ?>">
                         <div class="img-name">
                             <img src="<?php echo $song['immagineSrc']; ?>">
                             <h4><?php echo $song['titolo']; ?></h4>
@@ -39,10 +44,8 @@
 
 
 
-
-
         <script id="card-song-template" type="text/x-handlebars-template">  <!-- Template handlebars to create song card -->
-            <div class="card">
+            <div class="card" data-genre="{{genre}}">
                 <div class="img-name">
                     <img src="{{sourceImg}}">
                     <h4>{{songName}}</h4>
@@ -52,6 +55,11 @@
                     <span>{{year}}</span>
                 </div>
             </div>
+        </script>
+
+
+        <script id="select-option-template" type="text/x-handlebars-template">  <!-- Template handlebars to create select options -->
+            <option value="{{genre}}">{{genre}}</option>
         </script>
 
         <script src="dist/main.js" charset="utf-8"></script>
